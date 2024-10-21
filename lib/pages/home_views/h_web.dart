@@ -60,7 +60,9 @@ class HomeWeb extends StatelessWidget {
         mainAxisSize: MainAxisSize.min, // Prevent buttons from stretching
         children: [
           TextButton(
-            onPressed: () {}, 
+            onPressed: () {
+              Navigator.pushNamed(context, '/contact');
+            }, 
             style: TextButton.styleFrom(
               backgroundColor: const Color.fromARGB(255, 0, 0, 0),
               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 25),
@@ -179,6 +181,151 @@ class HomeWeb extends StatelessWidget {
     ),
   ],
 ),
+        const SizedBox(height: 60),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            const Icon(
+              FontAwesomeIcons.thumbtack,
+              size: 25,
+              color: Colors.black,
+            ),
+            const SizedBox(width: 15),
+            Text(
+              "Tech Stack & Skills",
+              style: GoogleFonts.poppins(
+                fontSize: 40,
+                fontWeight: FontWeight.w600,
+                color: Colors.black,
+              )
+            ),
+          ],
+        ),
+        const SizedBox(height: 20),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            TextButton(
+            onPressed: () {}, 
+            style: TextButton.styleFrom(
+              backgroundColor: const Color.fromARGB(255, 54, 54, 54),
+              padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 25),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(23),
+              )
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  "C#",
+                  style: GoogleFonts.poppins(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                  )
+                ),
+                const SizedBox(width: 10),
+                const FaIcon(
+                  FontAwesomeIcons.code,
+                  size: 17,
+                  color: Colors.white,
+                )
+              ],
+            ) 
+          ),
+          const SizedBox(width: 10),
+          TextButton(
+            onPressed: () {}, 
+            style: TextButton.styleFrom(
+              backgroundColor: const Color.fromARGB(255, 0, 67, 212),
+              padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 25),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(23),
+              )
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  "Dart",
+                  style: GoogleFonts.poppins(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                  )
+                ),
+                const SizedBox(width: 10),
+                const FaIcon(
+                  FontAwesomeIcons.code,
+                  size: 17,
+                  color: Colors.white,
+                )
+              ],
+            ) 
+          ),
+          const SizedBox(width: 10),
+          TextButton(
+            onPressed: () {}, 
+            style: TextButton.styleFrom(
+              backgroundColor: const Color.fromARGB(255, 152, 0, 212),
+              padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 25),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(23),
+              )
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  "Digital Marketing",
+                  style: GoogleFonts.poppins(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                  )
+                ),
+                const SizedBox(width: 10),
+                const FaIcon(
+                  FontAwesomeIcons.peopleGroup,
+                  size: 17,
+                  color: Colors.white,
+                )
+              ],
+            ) 
+          ),
+          const SizedBox(width: 10),
+          TextButton(
+            onPressed: () {}, 
+            style: TextButton.styleFrom(
+              backgroundColor: const Color.fromARGB(255, 1, 185, 47),
+              padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 25),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(23),
+              )
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  "Affiliate and Influencer Management",
+                  style: GoogleFonts.poppins(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                  )
+                ),
+                const SizedBox(width: 10),
+                const FaIcon(
+                  FontAwesomeIcons.lightbulb,
+                  size: 17,
+                  color: Colors.white,
+                )
+              ],
+            ) 
+          )
+        ],
+      ),
         const SizedBox(height: 60),
         Row(
           mainAxisAlignment: MainAxisAlignment.start,

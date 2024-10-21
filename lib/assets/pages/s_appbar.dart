@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -23,7 +25,9 @@ class S_AppBar extends StatelessWidget implements PreferredSizeWidget {
         ),
         actions: [
           TextButton(
-            onPressed: () {}, 
+            onPressed: () {
+              Navigator.pushNamed(context, '/contact');
+            }, 
             style: TextButton.styleFrom(
               backgroundColor: const Color.fromARGB(255, 255, 255, 255),
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:aladwani_portfolio/pages/home_views/h_mobile.dart';
 import 'package:aladwani_portfolio/pages/home_views/h_web.dart';
 import 'package:aladwani_portfolio/assets/pages/s_appbar.dart';
+import 'package:aladwani_portfolio/pages/about/contact.dart';
 
 void main() => runApp(const MainApp());
 
@@ -12,11 +13,15 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomeScreen(),
+    return MaterialApp(
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomeScreen(),
+        '/contact': (context) => const ContactPage(),
+      },
       debugShowCheckedModeBanner: false,
     );
-  } 
+  }
 }
 
 class HomeScreen extends StatelessWidget {

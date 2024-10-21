@@ -1,5 +1,4 @@
-// ignore_for_file: unused_import
-
+// ignore_for_file: unused_import, camel_case_types
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -11,11 +10,11 @@ class ProjectCard_Mobile extends StatelessWidget {
   final String description;
 
   const ProjectCard_Mobile({
-    Key? key,
+    super.key,
     required this.imageUrl,
     required this.title,
     required this.description,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
