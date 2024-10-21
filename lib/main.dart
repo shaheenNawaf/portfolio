@@ -37,7 +37,7 @@ class HomeScreen extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(50, 30, 50, 10),
           child: LayoutBuilder(
             builder: (BuildContext context, BoxConstraints constraints){
-              if (constraints.maxWidth > 670){
+              if (constraints.maxWidth > 970){
                 return const HomeWeb();
               }else{
                 return const HomeMobile();
