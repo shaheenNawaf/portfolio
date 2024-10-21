@@ -104,130 +104,128 @@ class HomeMobile extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 20),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            TextButton(
-            onPressed: () {}, 
-            style: TextButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 54, 54, 54),
-              padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 21),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(23),
-              )
-            ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  "C#",
-                  style: GoogleFonts.poppins(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w400,
-                    color: const Color.fromARGB(255, 255, 255, 255),
-                  )
-                ),
-                const SizedBox(width: 10),
-                const FaIcon(
-                  FontAwesomeIcons.code,
-                  size: 17,
-                  color: Colors.white,
-                )
-              ],
-            ) 
+        Wrap(
+  spacing: 10, // Horizontal spacing between buttons
+  runSpacing: 10, // Vertical spacing between buttons
+  children: [
+    TextButton(
+      onPressed: () {}, 
+      style: TextButton.styleFrom(
+        backgroundColor: const Color.fromARGB(255, 54, 54, 54),
+        padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 21),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(23),
+        )
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            "C#",
+            style: GoogleFonts.poppins(
+              fontSize: 15,
+              fontWeight: FontWeight.w400,
+              color: const Color.fromARGB(255, 255, 255, 255),
+            )
           ),
           const SizedBox(width: 10),
-          TextButton(
-            onPressed: () {}, 
-            style: TextButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 0, 67, 212),
-              padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 21),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(23),
-              )
-            ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  "Dart",
-                  style: GoogleFonts.poppins(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w400,
-                    color: const Color.fromARGB(255, 255, 255, 255),
-                  )
-                ),
-                const SizedBox(width: 10),
-                const FaIcon(
-                  FontAwesomeIcons.code,
-                  size: 17,
-                  color: Colors.white,
-                )
-              ],
-            ) 
-          ),
-          const SizedBox(width: 10),
-          TextButton(
-            onPressed: () {}, 
-            style: TextButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 152, 0, 212),
-              padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 21),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(23),
-              )
-            ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  "Digital Marketing",
-                  style: GoogleFonts.poppins(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w400,
-                    color: const Color.fromARGB(255, 255, 255, 255),
-                  )
-                ),
-                const SizedBox(width: 10),
-                const FaIcon(
-                  FontAwesomeIcons.peopleGroup,
-                  size: 17,
-                  color: Colors.white,
-                )
-              ],
-            ) 
-          ),
-          const SizedBox(width: 10),
-          TextButton(
-            onPressed: () {}, 
-            style: TextButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 1, 185, 47),
-              padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 21),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(23),
-              )
-            ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  "Affiliate and Influencer Management",
-                  style: GoogleFonts.poppins(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w400,
-                    color: const Color.fromARGB(255, 255, 255, 255),
-                  )
-                ),
-                const SizedBox(width: 10),
-                const FaIcon(
-                  FontAwesomeIcons.lightbulb,
-                  size: 17,
-                  color: Colors.white,
-                )
-              ],
-            ) 
+          const FaIcon(
+            FontAwesomeIcons.code,
+            size: 17,
+            color: Colors.white,
           )
         ],
+      ) 
+    ),
+    TextButton(
+      onPressed: () {}, 
+      style: TextButton.styleFrom(
+        backgroundColor: const Color.fromARGB(255, 0, 67, 212),
+        padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 21),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(23),
+        )
       ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            "Dart",
+            style: GoogleFonts.poppins(
+              fontSize: 15,
+              fontWeight: FontWeight.w400,
+              color: const Color.fromARGB(255, 255, 255, 255),
+            )
+          ),
+          const SizedBox(width: 10),
+          const FaIcon(
+            FontAwesomeIcons.code,
+            size: 17,
+            color: Colors.white,
+          )
+        ],
+      ) 
+    ),
+    TextButton(
+      onPressed: () {}, 
+      style: TextButton.styleFrom(
+        backgroundColor: const Color.fromARGB(255, 152, 0, 212),
+        padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 21),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(23),
+        )
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            "Digital Marketing",
+            style: GoogleFonts.poppins(
+              fontSize: 15,
+              fontWeight: FontWeight.w400,
+              color: const Color.fromARGB(255, 255, 255, 255),
+            )
+          ),
+          const SizedBox(width: 10),
+          const FaIcon(
+            FontAwesomeIcons.peopleGroup,
+            size: 17,
+            color: Colors.white,
+          )
+        ],
+      ) 
+    ),
+    TextButton(
+      onPressed: () {}, 
+      style: TextButton.styleFrom(
+        backgroundColor: const Color.fromARGB(255, 1, 185, 47),
+        padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 21),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(23),
+        )
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            "Affiliate & Influencer Management",
+            style: GoogleFonts.poppins(
+              fontSize: 10,
+              fontWeight: FontWeight.w400,
+              color: const Color.fromARGB(255, 255, 255, 255),
+            )
+          ),
+          const SizedBox(width: 10),
+          const FaIcon(
+            FontAwesomeIcons.lightbulb,
+            size: 17,
+            color: Colors.white,
+          )
+        ],
+      ) 
+    )
+  ],
+),
         const SizedBox(height: 50),
         Row(
           mainAxisAlignment: MainAxisAlignment.start,
